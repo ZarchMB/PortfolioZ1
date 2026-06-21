@@ -65,7 +65,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="/Racaza_Resume.pdf"
+            href="/OFFICIAL RESUME - A.L. RACAZA.pdf"
             className="hidden sm:inline font-mono text-[12px] tracking-[0.06em] border border-rule-strong px-3 py-1.5 text-ink-soft hover:border-steel hover:text-steel transition-colors"
             download
           >
@@ -105,7 +105,7 @@ export function SiteHeader() {
             </a>
           ))}
           <a
-            href="/Racaza_Resume.pdf"
+            href="/OFFICIAL RESUME - A.L. RACAZA.pdf"
             download
             className="font-mono text-[12px] tracking-[0.06em] border border-rule-strong px-3 py-2 text-ink-soft w-fit"
           >
