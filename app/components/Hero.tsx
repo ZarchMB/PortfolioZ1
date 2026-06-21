@@ -18,11 +18,11 @@ export function Hero() {
         </div>
 
         <p className="max-w-xl text-[15px] md:text-base leading-relaxed text-ink-soft">
-          Front-end leaning full-stack developer, Cum Laude graduate of the
-          BSIT program at University of Cebu. Most recently shipped the
+          Frontend-focused developer, Cum Laude graduate of the
+          BSIT program at University of Cebu - Banilad. Delivered the
           mobile application layer for an IoT reforestation system —
-          translating live soil-sensor data into planting decisions a
-          field worker can act on in seconds.
+          translating live soil-sensor data into suitable tree planting
+          recommendations for field workers.
         </p>
 
         <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pt-2">
