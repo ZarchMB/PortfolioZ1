@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  /* Ink & paper — a printed technical-document feel, not stark black/white */
   --paper: #F7F5EF;
   --paper-raised: #FCFBF7;
   --ink: #14202E;
@@ -13,6 +12,20 @@
   --slate: #6B7280;
   --rule: #D8D3C5;
   --rule-strong: #BFB8A4;
+}
+
+.dark {
+  --paper: #141C26;
+  --paper-raised: #1E2A35;
+  --ink: #E8EDF0;
+  --ink-soft: #BCC8D4;
+  --steel: #5B8DB5;
+  --steel-deep: #3A6A8F;
+  --brass: #D4B87A;
+  --brass-soft: #B89A5A;
+  --slate: #8A9AAD;
+  --rule: #2D3A48;
+  --rule-strong: #3E4E5E;
 }
 
 @theme inline {

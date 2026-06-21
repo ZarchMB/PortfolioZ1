@@ -1,3 +1,5 @@
+import { VisitorCount } from "./VisitorCount";
+
 export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 md:px-10 py-16 md:py-24">
@@ -46,8 +48,9 @@ export function Contact() {
         <span className="font-mono text-[11px] tracking-wide text-slate">
           ADRIANE LORENZ RACAZA — H. ABELLANA ST., BASAK, MANDAUE CITY, CEBU
         </span>
+          <VisitorCount />
         <span className="font-mono text-[11px] tracking-wide text-slate">
-          REV. 2026
+          EST. 2024
         </span>
       </div>
     </section>
