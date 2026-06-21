@@ -3,7 +3,7 @@ export function Hero() {
     <section id="top" className="relative mx-auto max-w-5xl px-6 md:px-10 pt-16 md:pt-24 pb-20">
       <div className="flex flex-col gap-10">
         <div className="flex items-baseline gap-4">
-          <span className="eyebrow text-brass">PORTFOLIO — REV. 2026</span>
+          <span className="eyebrow text-brass">PORTFOLIO — EST. 2024</span>
           <span className="hairline-full flex-1" />
         </div>
 
