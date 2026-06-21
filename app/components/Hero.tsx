@@ -18,9 +18,9 @@ export function Hero() {
         </div>
 
         <p className="max-w-xl text-[15px] md:text-base leading-relaxed text-ink-soft">
-          Frontend-focused developer, Cum Laude graduate of the
-          BSIT program at University of Cebu - Banilad. Delivered the
-          mobile application layer for an IoT reforestation system —
+          Front end Developer with a growing interest in full-stack development, 
+          Cum Laude graduate of the BSIT program at University of Cebu - Banilad. 
+          Delivered the mobile application layer for an IoT reforestation system —
           translating live soil-sensor data into suitable tree planting
           recommendations for field workers.
         </p>
