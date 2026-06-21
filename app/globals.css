@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  /* Ink & paper — a printed technical-document feel, not stark black/white */
+  --paper: #F7F5EF;
+  --paper-raised: #FCFBF7;
+  --ink: #14202E;
+  --ink-soft: #2C3E50;
+  --steel: #2C4A6E;
+  --steel-deep: #1B3350;
+  --brass: #B08D4F;
+  --brass-soft: #D9C39A;
+  --slate: #6B7280;
+  --rule: #D8D3C5;
+  --rule-strong: #BFB8A4;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-steel: var(--steel);
+  --color-steel-deep: var(--steel-deep);
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+  --color-slate: var(--slate);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  border-color: var(--rule);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(20, 32, 46, 0.045) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: var(--brass-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Eyebrow / section label style: small caps, wide tracking, ledger numeral */
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(to right, var(--rule-strong), transparent);
+}
+
+.hairline-full {
+  height: 1px;
+  background: var(--rule);
+}
+
+/* Underline-on-hover link, drawn not from a generic utility */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(var(--steel), var(--steel));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s ease;
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
