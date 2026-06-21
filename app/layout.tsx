@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Adriane Lorenz Racaza — Software Developer",
   description:
     "Portfolio of Adriane Lorenz Racaza — front-end leaning full-stack developer specializing in web and IoT-integrated applications.",
-  metadataBase: new URL("https://adrianeracaza.dev"),
+  metadataBase: new URL("https://portfolio-z1-seven.vercel.app/"),
   openGraph: {
     title: "Adriane Lorenz Racaza — Software Developer",
     description:

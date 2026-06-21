@@ -9,8 +9,8 @@ export function Contact() {
       <div className="grid md:grid-cols-[1.3fr_1fr] gap-10 items-end">
         <div>
           <h2 className="font-display text-3xl md:text-[2.5rem] leading-[1.1] text-ink tracking-tight">
-            Open to new-grad and junior developer roles —
-            <span className="italic text-steel"> front-end leaning.</span>
+            Open to entry-level and junior developer roles —
+            <span className="italic text-steel"> front-end focused.</span>
           </h2>
           <p className="mt-5 max-w-md text-[15px] text-ink-soft leading-relaxed">
             Based in Mandaue City, Cebu. Happy to talk about ReForest, the

@@ -45,7 +45,7 @@ export function Hero() {
         {[
           { dt: "Standing", dd: "Cum Laude" },
           { dt: "GWA", dd: "1.6 / 1.2 scale" },
-          { dt: "Dean's Lister", dd: "Yr 1 – Yr 4" },
+          { dt: "Dean's Lister", dd: "1st Yr – 4th Yr" },
           { dt: "Graduated", dd: "June 2026" },
         ].map((item) => (
           <div key={item.dt} className="bg-paper px-5 py-4">
