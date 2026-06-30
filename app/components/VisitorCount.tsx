@@ -2,23 +2,31 @@
 
 import { useEffect, useState } from "react";
 
-const API_URL = "https://api.countapi.xyz/hit/adrianeracaza.dev/visits";
-
 export function VisitorCount() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch(API_URL)
+    let cancelled = false;
+
+    fetch("/api/visits", { method: "POST" })
       .then((res) => res.json())
-      .then((data) => setCount(data.value))
-      .catch(() => setCount(null)); // Fail silently
+      .then((data) => {
+        if (!cancelled) setCount(data.count);
+      })
+      .catch(() => {
+        if (!cancelled) setCount(null);
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  if (count === null) return null; // Don't render anything if it fails
+  if (count === null) return null;
 
   return (
     <span className="font-mono text-[11px] tracking-wide text-slate">
-      {count} views
+      {count.toLocaleString()} {count === 1 ? "visit" : "visits"}
     </span>
   );
 }
