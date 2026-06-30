@@ -15,7 +15,7 @@ const groups = [
   },
   {
     label: "Tools & Platforms",
-    items: ["Git", "Google Cloud Platform", "Arduino", "ServiceNow"],
+    items: ["Git", "Google Cloud Platform", "Arduino"],
   },
 ];
 

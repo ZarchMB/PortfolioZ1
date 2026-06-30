@@ -1,7 +1,7 @@
 import { FlowDiagram } from "./FlowDiagram";
 import { SectionHeading } from "./SectionHeading";
 
-const stack = ["Firebase Realtime DB", "JavaScript", "Arduino C++", "React"];
+const stack = ["Firebase Realtime DB", "JavaScript", "Arduino C++", "React", "Kotlin"];
 
 export function Work() {
   return (
